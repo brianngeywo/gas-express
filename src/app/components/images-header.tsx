@@ -1,14 +1,14 @@
 const ImagesHeader = () => {
   const images = [
-    { id: 1, top: "top-10", right: "right-70", image: "/images/product.png" },
+    { id: 1, top: "top-10", right: "right-30", image: "/images/product.png" },
     {
       id: 2,
       top: "top-10",
-      left: "left-70",
+      left: "left-30",
       image: "/images/time and date.png",
     },
-    { id: 3, top: "top-5", left: "left-35", image: "/images/office.png" },
-    { id: 4, top: "top-5", right: "right-35", image: "/images/routes.png" },
+    { id: 3, top: "top-5", left: "left-15", image: "/images/office.png" },
+    { id: 4, top: "top-5", right: "right-15", image: "/images/routes.png" },
     {
       id: 5,
       top: "top-0",
@@ -19,18 +19,20 @@ const ImagesHeader = () => {
   ];
 
   return (
-    <div className="relative w-50 h-96">
-      {images.map((img) => (
-        <div
-          key={img.id}
-          className={`absolute ${img.top} ${img.left || ""} ${
-            img.right || ""
-          } h-94 w-40 bg-contain bg-center bg-no-repeat shadow-[0_35px_35px_rgba(0,0,0,0.25)] rounded-md bg-white ${
-            img.shadow || ""
-          }`}
-          style={{ backgroundImage: `url('${img.image}')` }}
-        ></div>
-      ))}
+    <div className="comtainer mx-auto md:mx-0 mb-20">
+      <div className="relative w-20 h-47">
+        {images.map((img) => (
+          <div
+            key={img.id}
+            className={`absolute ${img.top} ${img.left || ""} ${
+              img.right || ""
+            } h-45 w-20 bg-contain bg-center bg-no-repeat  rounded-md bg-white ${
+              img.shadow || "shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
+            }`}
+            style={{ backgroundImage: `url('${img.image}')` }}
+          ></div>
+        ))}
+      </div>
     </div>
   );
 };

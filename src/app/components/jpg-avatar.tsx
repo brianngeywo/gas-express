@@ -2,16 +2,17 @@ import { Avatar } from "./avatar";
 
 interface JPGAvatarProps {
   name: string;
-  width: number;
-  height: number;
+  width?: number; // Make width optional for responsiveness
+  height?: number; // Make height optional for responsiveness
+  className?: string; // Allow custom positioning and styling
 }
 
-const JPGAvatar = ({ name, width, height }: JPGAvatarProps) => {
+const JPGAvatar = ({ name, width = 100, height = 100, className }: JPGAvatarProps) => {
   return (
-    <div className="absolute top-0 left-0">
+    <div className={className}>
       <Avatar
         id={`${name}`}
-        alt="nairobi"
+        alt={name}
         imageType="jpg"
         width={width}
         height={height}

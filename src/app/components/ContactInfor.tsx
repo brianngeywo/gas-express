@@ -1,18 +1,24 @@
 // components/ContactInfo.js
 export default function ContactInfo() {
   return (
-    <div className="min-h-screen py-8 bg-no-repeat bg-cover px-60" style={{backgroundImage: "url('/images/bg-2.jpg')"}}>
-      <div className=" mx-auto py-8">
-        <div className="flex flex-row space-x-8">
-          <div className="px-48 min-w-2xl">
-            <h1 className="text-4xl font-bold mb-6 text-amber-950">Let's Talk!</h1>
+    <div
+      className="min-h-screen py-8 bg-no-repeat bg-cover px-4 sm:px-8 md:px-16 lg:px-32 xl:px-60"
+      style={{ backgroundImage: "url('/images/bg-2.jpg')" }}
+    >
+      <div className="mx-auto py-8">
+        <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
+          {/* Left Section - Form */}
+          <div className="w-full lg:w-1/2 px-4 sm:px-8 lg:px-14">
+            <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-amber-950">
+              Let's Talk!
+            </h1>
             <p className="mb-6 text-gray-700">
               Get in touch with us using the enquiry form or contact details
               below.
             </p>
 
             <form className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="First name *"
@@ -21,22 +27,22 @@ export default function ContactInfo() {
                 <input
                   type="text"
                   placeholder="Last name *"
-                  className="p-2 border rounded border-gray-black text-black placeholder-black-500"
+                  className="p-2 border rounded border-gray-500 text-black placeholder-black-500"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4 border-gray-black text-black placeholder-gray-500">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="email"
-                  placeholder="Your mail *"
-                  className="p-2 border rounded border-gray-black text-black placeholder-gray-500"
+                  placeholder="Your email *"
+                  className="p-2 border rounded border-gray-500 text-black placeholder-gray-500"
                 />
                 <input
                   type="tel"
                   placeholder="Phone number *"
-                  className="p-2 border rounded border-gray-black text-black placeholder-gray-500"
+                  className="p-2 border rounded border-gray-500 text-black placeholder-gray-500"
                 />
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <select className="p-2 border rounded text-black">
                   <option>Vendor/Client/Driver *</option>
                 </select>
@@ -58,15 +64,13 @@ export default function ContactInfo() {
             </form>
           </div>
 
-          <div className="bg-white rounded-lg shadow-xl p-16 max-w-md">
+          {/* Right Section - Contact Details */}
+          <div className="w-full lg:w-1/2 bg-white rounded-lg shadow-xl p-8 sm:p-12 lg:p-16">
             <div className="mt-8">
-              <div>
-                <h2 className="text-xl font-bold mb-4 text-amber-950 font-bold">
+              <h2 className="text-xl font-bold mb-4 text-amber-950">
                 Our Location
               </h2>
-              </div>
-              
-              <p className=" text-gray-700">
+              <p className="text-gray-700">
                 Visit us at our offices in Nairobi, Pioneer house, Kenyatta Ave,
                 Nairobi, Kenya
               </p>
@@ -103,7 +107,9 @@ export default function ContactInfo() {
             </div>
 
             <div className="mt-8">
-              <h2 className="text-xl font-bold mb-4 text-amber-950">Follow us</h2>
+              <h2 className="text-xl font-bold mb-4 text-amber-950">
+                Follow us
+              </h2>
               {/* Add social media icons/links here */}
             </div>
           </div>
