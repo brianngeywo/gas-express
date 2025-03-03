@@ -1,7 +1,7 @@
 import { newContactInfor } from "@/utils/form-actions";
 
 // components/ContactInfo.js
-const ContactForm = ({}) => {
+const ContactForm = () => {
   return (
     <div className="w-full lg:w-1/2 px-4 sm:px-8 lg:px-14">
       <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-amber-950">
