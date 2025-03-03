@@ -1,6 +1,3 @@
-import db from "@/utils/db";
-import { newContactInfor } from "@/utils/form-actions";
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import ContactForm from "./ContactForm";
 import ContactDetails from "./ContactDetails";
 
