@@ -11,7 +11,7 @@ export default function ContactInfo() {
           {/* Left Section - Form */}
           <div className="w-full lg:w-1/2 px-4 sm:px-8 lg:px-14">
             <h1 className="text-3xl sm:text-4xl font-bold mb-6 text-amber-950">
-              Let's Talk!
+              {`Let's Talk!`}
             </h1>
             <p className="mb-6 text-gray-700">
               Get in touch with us using the enquiry form or contact details
