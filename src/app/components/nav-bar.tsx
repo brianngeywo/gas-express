@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const NavBarSection = () => {
   return (
-    <header className="bg-white text-white py-4  w-sm">
-      <div className="mx-0 flex justify-between items-center">
+    <header className="bg-white text-white w-full">
+      <div className="mx-0 flex flex-row justify-between items-center">
         {/* Logo */}
-        <div className="w-14 grow ">
+        <div className="w-35 flex-none">
           <Image
             src="/images/logo.png"
             alt="Logo"
@@ -14,8 +14,9 @@ const NavBarSection = () => {
             className="w-full h-auto"
           />
         </div>
-        <nav>
-          <ul className="flex-none space-x-2 sm:space-x-4 items-center">
+        
+        <nav className="flex-none">
+          <ul className="flex flex-row space-x-4 items-center mr-6">
             {/* Hidden links for now */}
             {/* <li>
               <a href="#" className="text-black font-bold hidden sm:block">
@@ -28,7 +29,7 @@ const NavBarSection = () => {
               </a>
             </li> */}
             <li>
-              <a href="#" className="text-black font-bold hidden lg:block">
+              <a href="#contact-section" className="text-black font-bold hidden md:block">
                 Contact Us
               </a>
             </li>
@@ -39,7 +40,7 @@ const NavBarSection = () => {
                 href="https://play.google.com/store/apps/details?id=com.girrafe.kasarani_gas_center"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-blue-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+                className="inline-block bg-blue-950 text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors shadow-lg"
               >
                 Download now
               </a>

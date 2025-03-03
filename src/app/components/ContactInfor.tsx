@@ -2,6 +2,7 @@
 export default function ContactInfo() {
   return (
     <div
+    id="contact-section"
       className="min-h-screen py-8 bg-no-repeat bg-cover px-4 sm:px-8 md:px-16 lg:px-32 xl:px-60"
       style={{ backgroundImage: "url('/images/bg-2.jpg')" }}
     >
@@ -44,10 +45,13 @@ export default function ContactInfo() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <select className="p-2 border rounded text-black">
-                  <option>Vendor/Client/Driver *</option>
+                  <option>Client </option>
+                  <option>Driver</option>
+                  <option>Vendor</option>
                 </select>
                 <select className="p-2 border rounded text-black">
                   <option>Solution</option>
+                  <option>Complaint</option>
                 </select>
               </div>
               <textarea
@@ -65,13 +69,13 @@ export default function ContactInfo() {
           </div>
 
           {/* Right Section - Contact Details */}
-          <div className="w-full lg:w-1/2 bg-white rounded-lg shadow-xl p-8 sm:p-12 lg:p-16">
+          <div className="w-full lg:w-1/2 bg-white rounded-lg  p-8 sm:p-12 lg:p-16">
             <div className="mt-8">
               <h2 className="text-xl font-bold mb-4 text-amber-950">
                 Our Location
               </h2>
               <p className="text-gray-700">
-                Visit us at our offices in Nairobi, Pioneer house, Kenyatta Ave,
+                Visit us at our offices in Kasarani, Pioneer house, Kenyatta Ave,
                 Nairobi, Kenya
               </p>
             </div>
@@ -83,13 +87,13 @@ export default function ContactInfo() {
               <p className="text-gray-600">
                 Email:{" "}
                 <a href="mailto:info@bebagas.com" className="text-gray-700">
-                  info@bebagas.com
+                  info@gasexpress.com
                 </a>
               </p>
               <p className="text-gray-600">
                 Support:{" "}
                 <a href="mailto:support@bebagas.com" className="text-gray-700">
-                  support@bebagas.com
+                  support@gasexpress.com
                 </a>
               </p>
             </div>
@@ -100,8 +104,8 @@ export default function ContactInfo() {
               </h2>
               <p className="text-gray-600">
                 Call Us:{" "}
-                <a href="tel:+254704017104" className="text-gray-700">
-                  +254 704 017104
+                <a href="tel:+254727521521" className="text-gray-700">
+                +254 727 521 521
                 </a>
               </p>
             </div>

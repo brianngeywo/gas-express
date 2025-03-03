@@ -5,29 +5,29 @@ const DashboardFooter = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start space-y-8 lg:space-y-0 lg:space-x-8">
           {/* BEBA GAS Section */}
           <div className="w-full lg:w-1/4">
-            <h1 className="text-2xl font-bold mb-6 text-amber-950">BEBA GAS</h1>
+            <h1 className="text-2xl font-bold mb-6 text-amber-950">Kasarani GAS</h1>
             <p className="mb-4 text-black">
               Pioneer house, Kenyatta Ave, Nairobi, Kenya
             </p>
-            <p className="mb-4 text-black">+254 704 017104</p>
+            <p className="mb-4 text-black">+254 727 521 521</p>
 
-            <div className="mb-6">
-              <h2 className="text-xl font-bold mb-2 text-black">
+            <div className="">
+              <h2 className="text-xl font-bold mb-2 text-amber-950">
                 Support Department
               </h2>
               <p>
-                <a href="mailto:info@bebagas.com" className="text-blue-500">
-                  info@bebagas.com
+                <a href="mailto:info@bebagas.com" className="text-gray-700">
+                  info@gasexpress.com
                 </a>
               </p>
               <p>
-                <a href="mailto:support@bebagas.com" className="text-blue-500">
-                  support@bebagas.com
+                <a href="mailto:support@bebagas.com" className="text-gray-700">
+                  support@gasexpress.com
                 </a>
               </p>
               <p>
-                <a href="mailto:drivers@bebagas.com" className="text-blue-500">
-                  drivers@bebagas.com
+                <a href="mailto:drivers@bebagas.com" className="text-gray-700">
+                  drivers@gasexpress.com
                 </a>
               </p>
             </div>
@@ -40,17 +40,17 @@ const DashboardFooter = () => {
             </h2>
             <ul className="space-y-2">
               <li className="text-black">Home</li>
-              <li className="text-black">About Us</li>
+              {/* <li className="text-black">About Us</li> */}
               <li className="text-black">Contact Us</li>
               <li className="text-black">Privacy</li>
               <li className="text-black">Terms and condition</li>
-              <li className="text-black">Downloads</li>
+              {/* <li className="text-black">Downloads</li> */}
             </ul>
           </div>
 
           {/* Register Section */}
           <div className="w-full lg:w-1/4">
-            <div className="mb-6">
+            <div className="">
               <h2 className="text-xl font-bold mb-2 text-amber-950">
                 Register as:
               </h2>
@@ -60,14 +60,14 @@ const DashboardFooter = () => {
                 <li className="text-black">Delivery boy</li>
               </ul>
             </div>
-
-            <div className="mb-6">
+{/* 
+            <div className="">
               <input
                 type="email"
                 placeholder="Your mail address"
                 className="w-full p-2 border rounded"
               />
-            </div>
+            </div> */}
           </div>
 
           {/* Play Store Button Section */}
