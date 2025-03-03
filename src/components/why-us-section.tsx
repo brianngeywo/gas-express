@@ -1,3 +1,6 @@
+import { FaBusinessTime, FaShippingFast } from "react-icons/fa";
+import { GiCookingPot } from "react-icons/gi";
+
 const WhyUsSection = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-gray-200 min-h-full px-8 py-12">
@@ -9,9 +12,11 @@ const WhyUsSection = () => {
       {/* Three Cards Section */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
         {/* Card 1 */}
-        <div className="w-60 h-60 sm:w-50 bg-white flex flex-col justify-center items-center p-4 rounded-lg shadow-xl mb-6">
+        <div className="w-60 h-60 bg-white flex flex-col justify-center items-center p-4 rounded-lg shadow-xl mb-6">
           <div className="bg-amber-950 rounded-full w-16 h-16 sm:w-24 sm:h-24 flex justify-center items-center">
-            <div className="text-white text-center">icon</div>
+            <div className="text-white text-center">
+              <FaBusinessTime className="text-white text-4xl" />
+            </div>
           </div>
           <div className="m-2 text-black font-bold text-center text-sm sm:text-base">
             Easy to order Gas
@@ -22,9 +27,11 @@ const WhyUsSection = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="h-60 w-60 sm:w-50  bg-white flex flex-col justify-center items-center p-4 rounded-lg shadow-xl mb-6">
+        <div className="h-60 w-60 bg-white flex flex-col justify-center items-center p-4 rounded-lg shadow-xl mb-6">
           <div className="bg-amber-950 rounded-full w-16 h-16 sm:w-24 sm:h-24 flex justify-center items-center">
-            <div className="text-white text-center">icon</div>
+            <div className="text-white text-center">
+              <FaShippingFast className="text-white text-4xl" />
+            </div>
           </div>
           <div className="m-2 text-black font-bold text-center text-sm sm:text-base">
             Fast delivery
@@ -35,9 +42,11 @@ const WhyUsSection = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="h-60 w-60 sm:w-50  bg-white flex flex-col justify-center items-center p-4 rounded-lg shadow-xl mb-6">
+        <div className="h-60 w-60 bg-white flex flex-col justify-center items-center p-4 rounded-lg shadow-xl mb-6">
           <div className="bg-amber-950 rounded-full w-16 h-16 sm:w-24 sm:h-24 flex justify-center items-center">
-            <div className="text-white text-center">icon</div>
+            <div className="text-white text-center">
+              <GiCookingPot  className="text-white text-4xl" />
+            </div>
           </div>
           <div className="m-2 text-black font-bold text-center text-sm sm:text-base">
             Clean cooking

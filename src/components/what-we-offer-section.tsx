@@ -1,3 +1,5 @@
+import { FaMotorcycle, FaUserCheck, FaUsers } from "react-icons/fa";
+
 const WhatWeOfferSection = () => {
   return (
     <section
@@ -11,7 +13,9 @@ const WhatWeOfferSection = () => {
             {/* Drivers Card */}
             <div className="h-40 w-40 sm:h-52 sm:w-52 bg-white flex flex-col justify-center items-center mx-4">
               <div className="bg-amber-950 rounded-full w-20 h-20 sm:w-24 sm:h-24 flex justify-center items-center">
-                <div className="text-white text-center">icon</div>
+                <div className="text-white text-center">
+                  <FaMotorcycle className="text-white text-4xl" />
+                </div>
               </div>
               <div className="m-2 text-amber-950 font-bold text-center">
                 Drivers
@@ -21,7 +25,9 @@ const WhatWeOfferSection = () => {
             {/* Customers Card */}
             <div className="h-40 w-40 sm:h-52 sm:w-52 bg-white flex flex-col justify-center items-center mx-4">
               <div className="bg-amber-950 rounded-full w-20 h-20 sm:w-24 sm:h-24 flex justify-center items-center">
-                <div className="text-white text-center">icon</div>
+                <div className="text-white text-center">
+                  <FaUsers className="text-white text-4xl" />
+                </div>
               </div>
               <div className="m-2 text-amber-950 font-bold text-center">
                 Customers
@@ -31,7 +37,9 @@ const WhatWeOfferSection = () => {
             {/* Suppliers Card */}
             <div className="h-40 w-40 sm:h-52 sm:w-52 bg-white flex flex-col justify-center items-center mx-4">
               <div className="bg-amber-950 rounded-full w-20 h-20 sm:w-24 sm:h-24 flex justify-center items-center">
-                <div className="text-white text-center">icon</div>
+                <div className="text-white text-center">
+                  <FaUserCheck className="text-white text-4xl" />
+                </div>
               </div>
               <div className="m-2 text-amber-950 font-bold text-center">
                 Suppliers

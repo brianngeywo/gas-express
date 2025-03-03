@@ -5,7 +5,7 @@ const DashboardFooter = () => {
         <div className="flex flex-col lg:flex-row justify-between items-start space-y-8 lg:space-y-0 lg:space-x-8">
           {/* BEBA GAS Section */}
           <div className="w-full lg:w-1/4">
-            <h1 className="text-2xl font-bold mb-6 text-amber-950">Kasarani GAS</h1>
+            <h1 className="text-2xl font-bold mb-6 text-amber-950">Kasarani Gas</h1>
             <p className="mb-4 text-black">
               Pioneer house, Kenyatta Ave, Nairobi, Kenya
             </p>

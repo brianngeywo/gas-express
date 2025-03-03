@@ -1,22 +1,12 @@
-const ImagesHeader = () => {
-  const images = [
-    { id: 1, top: "top-10", right: "right-30 sm:right-60", image: "/images/product.png" },
-    {
-      id: 2,
-      top: "top-10",
-      left: "left-30 sm:left-60",
-      image: "/images/time and date.png",
-    },
-    { id: 3, top: "top-5", left: "left-15 sm:left-30", image: "/images/office.png" },
-    { id: 4, top: "top-5", right: "right-15 sm:right-30", image: "/images/routes.png" },
-    {
-      id: 5,
-      top: "top-0",
-      left: "left-0",
-      shadow: "shadow-[0_75px_75px_rgba(0,0,0,0.5)]",
-      image: "/images/home.png",
-    },
-  ];
+import db from "@/utils/db";
+
+const getImagesData = async () => {
+  const images = await db.headerImage.findMany({});
+  return images;
+};
+
+const ImagesHeader = async () => {
+  const images = await getImagesData();
 
   return (
     <div className="comtainer mx-auto md:mx-0 mb-20">

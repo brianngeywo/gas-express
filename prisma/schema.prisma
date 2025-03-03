@@ -1,14 +1,57 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
+}
+
+model HeaderImage {
+  id    Int    @id @default(autoincrement())
+  top   String
+  left  String?
+  right String?
+  image String
+  shadow String?
+}
+
+
+model ContactMessages {
+  id        String    @id   @default(uuid())
+  firstName String
+  lastName  String
+  email     String
+  phone     String
+  role      String
+  inquiryType String
+  message   String
+  status    Boolean   @default(false)
+  createdAt DateTime  @default(now())
+}
+
+model ContactDetails {
+  id          Int      @id @default(autoincrement())
+  location    String
+  email       String
+  supportEmail String
+  phoneNumber String
+  facebookUrl String?
+  twitterUrl  String?
+  instagramUrl String?
+  linkedinUrl String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model DownloadAppAction {
+  id          Int       @id @default(autoincrement())
+  title       String
+  pitchText   String
+  playStoreLink String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
