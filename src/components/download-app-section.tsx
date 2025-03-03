@@ -2,12 +2,25 @@ import db from "@/utils/db";
 import ImagesHeader from "./images-header";
 
 const getDownloadLink = async () => {
- const appInfor = await db.downloadAppAction.findFirstOrThrow();
- return appInfor;
-}
+  // Use `findFirst` instead of `findFirstOrThrow`
+  const appInfor = await db.downloadAppAction.findFirst();
+  return appInfor;
+};
 
 const DownloadAppSection = async () => {
   const appInfor = await getDownloadLink();
+
+  // Handle the case where no app information is found
+  if (!appInfor) {
+    return (
+      <div className="flex flex-col justify-center items-center min-h-screen p-4 sm:p-8 bg-gray-900 text-white">
+        <p className="text-center text-gray-300">
+          No download information available.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col justify-center items-center min-h-screen p-4 sm:p-8 bg-gray-900 text-white">
       {/* Image Header */}
